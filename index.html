@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+
+        <!-- "О себе" -->
+        <section id="about" class="section">
+            <h2>Обо мне</h2>
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    <i class="fas fa-user"></i> Личная информация
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <p style="text-align: center;">Привет! Меня зовут Головушкина София.</p>
+                        </span>Свой путь в IT я начала с изучения Python и C++, постепенно осваивая другие языки программирования, 
+                        современные фреймворки и инструменты разработки. 
+                        Особый интерес проявляю к созданию чат-ботов и веб-приложений.<br>
+                        <i class="fas fa-code"></i> <span class="fw-bold">Род деятельности:</span> Fullstack-разработчик<br>
+                        <i class="fas fa-graduation-cap"></i> <span class="fw-bold">Образование:</span> РТУ МИРЭА, Информационные системы и техологии, Fullstack-разработка<br>
+                        <i class="fas fa-map-marker-alt"></i> <span class="fw-bold">Город:</span> Москва
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- "Навыки" -->
+        <section id="skills" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Навыки</h2>
+                <table class="skills-table">
+                    <tr>
+                        <th colspan="2">Языки программирования</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Средний уровень</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Базовый уровень</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Базовый уровень</td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="2">Фреймворки и технологии</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Flask,  SQLite/PostgreSQL,  HTML/CSS,  Git/GitHub</td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="2">Другие навыки</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Английский (B2+),  Работа в команде,  Ответственность</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- Проекты -->
+        <section id="projects" class="section">
+            <h2>Мои проекты</h2>
+            <div class="project">
+                <h3>Трекер КБЖУ</h3>
+                <p>Веб-приложение для учёта калорий и нутриентов (белки/жиры/углеводы)</p>
+                <div class="project-images">
+                    <img src="images/first_photo.jpeg" alt="Главный экран">
+                    <img src="images/second_photo.jpeg" alt="Добавление продукта">
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Sofiia-cloud/Calorie-tracker" class="btn">Код на GitHub</a>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контакты -->
+    <footer id="contacts" class="section">
+        <h2>Контакты</h2>
+        <ul>
+            <a href="mailto:sofiya.golovushkina@bk.ru" class="btn">Email</a>
+            <a href="https://t.me/sofico6" class="btn">Telegram</a>
+            <a href="https://github.com/Sofiia-cloud" class="btn">GitHub</a>
+            
+        </ul>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
