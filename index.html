@@ -3,132 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        
 </head>
 <body>
-  
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#skills">Навыки</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#about">Обо мне</a>
+                <a href="#skills">Навыки</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </div>
+        </div>
     </header>
 
-   
-    <main>
+    <section class="hero">
+        <div class="container">
+            <h1>СОФИЯ ГОЛОВУШКИНА</h1>
+            <h2>Fullstack разработчик</h2>
+            <p></p>
+            <div>
+                <a href="#contact" class="btn">Связаться со мной</a>
+                <a href="#projects" class="btn btn-outline">Мои проекты</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- "О себе" -->
-        <section id="about" class="section">
-            <h2>Обо мне</h2>
-            <div class="card border-primary">
-                <div class="card-header bg-primary text-white">
-                    <i class="fas fa-user"></i> Личная информация
-                </div>
-                <div class="card-body">
-                    <p class="card-text">
-                        <p style="text-align: center;">Привет! Меня зовут Головушкина София.</p>
-                        </span>Свой путь в IT я начала с изучения Python и C++, постепенно осваивая другие языки программирования, 
-                        современные фреймворки и инструменты разработки. 
-                        Особый интерес проявляю к созданию чат-ботов и веб-приложений.<br>
-                        <i class="fas fa-code"></i> <span class="fw-bold">Род деятельности:</span> Fullstack-разработчик<br>
-                        <i class="fas fa-graduation-cap"></i> <span class="fw-bold">Образование:</span> РТУ МИРЭА, Информационные системы и техологии, Fullstack-разработка<br>
-                        <i class="fas fa-map-marker-alt"></i> <span class="fw-bold">Город:</span> Москва
-                    </p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">ОБО МНЕ</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Свой путь в IT я начала с изучения Python и C++, постепенно осваивая другие языки программирования и современные технологии.</p>
+                    <p>Особый интерес проявляю к разработке чат-ботов и веб-приложений с использованием современных фреймворков и инструментов.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <strong>Род деятельности:</strong> Fullstack-разработчик
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>Образование:</strong> РТУ МИРЭА, Информационные системы и технологии
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Город:</strong> Москва
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        
+        </div>
+    </section>
 
-        <!-- "Навыки" -->
-        <section id="skills" class="section section-dark">
-            <div class="container">
-                <h2 class="section-title">Навыки</h2>
-                <table class="skills-table">
-                    <tr>
-                        <th colspan="2">Языки программирования</th>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Средний уровень</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Базовый уровень</td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>Базовый уровень</td>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2">Фреймворки и технологии</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Flask,  SQLite/PostgreSQL,  HTML/CSS,  Git/GitHub</td>
-                    </tr>
-                    
-                    <tr>
-                        <th colspan="2">Другие навыки</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Английский (B2+),  Работа в команде,  Ответственность</td>
-                    </tr>
-                </table>
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">МОИ НАВЫКИ</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Языки программирования</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>C++</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Фреймворки и технологии</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Flask</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML/CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Инструменты</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git/GitHub</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Figma</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- Проекты -->
-        <section id="projects" class="section">
-            <h2>Мои проекты</h2>
-            <div class="project">
-                <h3>Трекер КБЖУ</h3>
-                <p>Веб-приложение для учёта калорий и нутриентов (белки/жиры/углеводы)</p>
-                <div class="project-images">
-                    <img src="images/first_photo.jpeg" alt="Главный экран">
-                    <img src="images/second_photo.jpeg" alt="Добавление продукта">
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">МОИ ПРОЕКТЫ</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\second_photo.jpeg" alt="Трекер КБЖУ">
+                    </div>
+                    <div class="project-content">
+                        <h3>Трекер КБЖУ</h3>
+                        <p>Веб-приложение для учета калорий и нутриентов с возможностью добавления продуктов.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sofiia-cloud/Calorie-tracker" class="btn">GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/Sofiia-cloud/Calorie-tracker" class="btn">Код на GitHub</a>
-                    
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\calc_1.jpg" alt="Калькулятор">
+                    </div>
+                    <div class="project-content">
+                        <h3>Расширенный калькулятор</h3>
+                        <p>Оконное приложение с функциями научного калькулятора, конвертером величин и решением квадратных уравнений.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sofiia-cloud/calculator" class="btn">GitHub</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="project">
-                <h3>Калькулятор с раширенным функционалом</h3>
-                <p>Оконное приложение для арифметических вычислений с поддержкой научных функций, конвертера величин и решения квадратных уравнений</p>
-                <div class="project-images">
-                    <img src="images/calc_1.jpg" alt="Научный калькулятор">
-                    <img src="images/calc_2.jpg" alt="Конвертер величин">
-                    <img src="images/calc_3.jpg" alt="Решение квадратных уравнений">
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Sofiia-cloud/calculator" class="btn">Код на GitHub</a>
-                    
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Контакты -->
-    <footer id="contacts" class="section">
-        <h2>Контакты</h2>
-        <ul>
-            <a href="mailto:sofiya.golovushkina@bk.ru" class="btn">Email</a>
-            <a href="https://t.me/sofico6" class="btn">Telegram</a>
-            <a href="https://github.com/Sofiia-cloud" class="btn">GitHub</a>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">КОНТАКТЫ</h2>
+            <p>Готова к сотрудничеству и новым проектам. Свяжитесь со мной удобным способом!</p>
             
-        </ul>
-    </footer>
+            <div class="social-links">
+                <a href="https://t.me/sofico6" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/Sofiia-cloud" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="mailto: sofiya.golovushkina@bk.ru" class="social-link"><i class="fab fa-envelope-open"></i></a>
+            </div>
+        </div>
+    </section>
 
    
-    <script src="script.js"></script>
 </body>
 </html>
